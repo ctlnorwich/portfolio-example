@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="en-GB">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <a href="/">My Portfolio</a>
+    <header role="banner">
+        <a class="logo" href="/">My Portfolio</a>
         <a href="mailto:me@myportfolio.com">me@myportfolio.com</a>
     </header>
 
     <main>
+
         <h1>My tagline about what I do</h1>
 
-        <article>
+        <article class="intro container">
             <figure>
                 <img src="https://images.pexels.com/photos/3762863/pexels-photo-3762863.jpeg" alt="">
             </figure>
 
             <div>
                 <h2>About Me</h2>
-                <p><strong>Vel fames scelerisque facilisis sed lorem cursus orci enim nibh. Diam adipiscing eget volutpat quam felis nisi. Fermentum sed arcu lectus quam vel ut tristique.</strong></p>
-                <p>At aliquet vehicula lacus id fermentum malesuada pulvinar. In risus aliquet fermentum euismod sagittis facilisis a nibh. Mi sed ridiculus urna at. Tempus aliquam sit arcu justo sed pretium tellus fringilla elementum.</p>
+                <p><strong>Vel fames scelerisque facilisis sed lorem cursus orci enim nibh. Diam adipiscing eget
+                        volutpat quam felis nisi. Fermentum sed arcu lectus quam vel ut tristique.</strong></p>
+                <p>At aliquet vehicula lacus id fermentum malesuada pulvinar. In risus aliquet fermentum euismod
+                    sagittis facilisis a nibh. Mi sed ridiculus urna at. Tempus aliquam sit arcu justo sed pretium
+                    tellus fringilla elementum.</p>
             </div>
         </article>
 
-        <section>
-            <h2>My Projects</h2>
+        <section class="projects">
+            <div class="container">
+                <h2>My Projects</h2>
 
-            <article>
-                <div>
-                    <h3>Project 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Enim id ut faucibus pretium arcu ut. Egestas lectus etiam mus in.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur. Enim id ut faucibus pretium arcu ut. Egestas lectus etiam mus in.</p>
-                    <button>View this project</button>
-                </div>
-                <figure>
-                    <img src="https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg" alt="">
-                </figure>
-            </article>
-
+                <article>
+                    <div>
+                        <h3>Project 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. Enim id ut faucibus pretium arcu ut. Egestas lectus
+                            etiam mus in.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur. Enim id ut faucibus pretium arcu ut. Egestas lectus
+                            etiam mus in.</p>
+                        <a class="button" href="project.html">View this project</a>
+                    </div>
+                    <figure>
+                        <img src="https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg" alt="">
+                    </figure>
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <a href="mailto:me@myportfolio.com">me@myportfolio.com</a>
     </footer>
-    
+
 </body>
+
 </html>
