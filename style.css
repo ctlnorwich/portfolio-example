@@ -51,6 +51,10 @@ header {
         color: var(--color-brand-light);
         text-decoration: none;
     }
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
 h1 {
@@ -93,7 +97,6 @@ figure {
     border-radius: 1rem;
     box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transform: rotate(2deg);
 }
 
 img {
@@ -109,12 +112,18 @@ img {
 }
 
 .button {
-    background: #D6E0ED;
+    background: var(--color-brand-light);
     color: var(--color-brand);
     padding: 0.5rem 1rem;
     border: 0;
     border-radius: 1rem;
     font-size: 1.25em;
+    text-decoration: none;
+    line-height: 1;
+}
+.button:hover {
+    background: var(--color-brand-dark);
+    color: var(--color-brand-light);
 }
 
 /* Sections */
@@ -173,7 +182,22 @@ img {
     figure {
         margin-top: 2rem;
         border: solid 2px var(--color-brand-light);
+        transform: rotate(2deg);
     }
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.detail figure {
+    border: 2px solid var(--color-brand);
+}
+
+.detail > * + * {
+    margin-top: 1.5rem;
 }
 
 footer {
@@ -189,6 +213,7 @@ footer {
         color: var(--color-brand-light);
     }
 }
+
 
 @media screen and (min-width: 768px) {
 
