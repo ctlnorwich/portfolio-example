@@ -214,6 +214,15 @@ footer {
     }
 }
 
+.scrollCheck {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.inView {
+    opacity: 1;
+}
+
 
 @media screen and (min-width: 768px) {
 
